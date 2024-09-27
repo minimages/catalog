@@ -1,0 +1,43 @@
+# minimages
+
+Minimal multi-arch container images for various tools based on Wolfi.
+
+## Images
+
+{{- $spec := datasource "images" -}}
+{{- $tags := datasource "tags" }}
+{{ $names := $spec.images | coll.Keys | coll.Sort -}}
+
+<table>
+<tr>
+<th>Image</th>
+<th>Tags</th>
+</tr>
+
+{{- range $name:= $names }}
+<tr>
+{{ $image := index $spec.images $name -}}
+{{ $imageTags := index $tags $name }}
+<td>
+    <a href="//{{$spec.repository}}/{{$name}}"><code>{{$spec.repository}}/{{$name}}</code></a>
+</td>
+
+<td>
+    {{- range $tag := $imageTags }}
+    <code>{{$tag}}</code>
+    {{- end }}
+</td>
+</tr>
+{{ end }}
+</table>
+
+## Image Configuration
+
+All images run as non-root user with UID/GID 65532. The directory `/src` is provided as the working directory and is owned by the same user.
+
+## Tags
+### `-dev` tags
+These images contain `busybox` to provide a minimal shell and `apk-tools` to install additional packages.
+
+### Semver tags
+The images get tagged with the components of semver version of the upstream package they are based on.

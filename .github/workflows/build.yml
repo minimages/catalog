@@ -1,0 +1,47 @@
+name: Build
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 0"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+      pull-requests: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
+        with:
+          persist-credentials: false
+
+      - name: Login to ghcr.io
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_ACTOR: ${{ github.actor }}
+        run: |
+          echo $GITHUB_TOKEN | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin
+
+      - name: Install terraform
+        uses: hashicorp/setup-terraform@b9cd54a3c349d3f38e8881555d616ced269862dd # v3
+
+      - name: Build and push images
+        run: |
+          make init
+          make apply-approve
+
+      - name: Update README.md
+        run: |
+          make README.md gomplate="docker run -v $PWD:/src:ro -w /src hairyhenderson/gomplate:stable@sha256:352552aa583f824675eddb4e3e90e78c4901c3f3906033195402bb3ffc1d1464"
+
+      - name: Create Pull Request
+        uses: canonical/create-pull-request@5b97f11bd11d44ed8c4ad49f60d6f529374b1e87
+        with:
+          github-token: ${{ github.token }}
+          upsert: true
+          branch-name: github-actions/update
+          ignore-no-changes: true
+          title: Update tags and README.md
+          commit-message: Update tags and README.md

@@ -1,0 +1,23 @@
+repository: ghcr.io/minimages
+images:
+  curl:
+    packages: [curl]
+
+  git:
+    packages: [git]
+
+  gcloud:
+    packages: [google-cloud-sdk]
+    tags_count: 1
+    config:
+      entrypoint:
+        command: gcloud
+
+  traefik:
+    packages: [traefik]
+
+  aws-cli:
+    packages: [aws-cli-v2]
+    config:
+      entrypoint:
+        command: aws
