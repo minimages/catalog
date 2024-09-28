@@ -15,6 +15,18 @@ provider "registry.terraform.io/chainguard-dev/apko" {
   ]
 }
 
+provider "registry.terraform.io/chainguard-dev/cosign" {
+  version = "0.0.20"
+  hashes = [
+    "h1:JMcAf6lLQb7lhZJXvS1KKYTdzVtA/hZGvQvZfkW0WcQ=",
+    "zh:52237c64d90cb8d272950207bbb9ce0a858f3ead0585234369bcb8ac40513ba3",
+    "zh:889388eec3504c260c4aee763083513f94039984167d881a849ab17523dd45db",
+    "zh:890df766e9b839623b1f0437355032a3c006226a6c200cd911e15ee1a9014e9f",
+    "zh:a07dc681a24925ae64f1ebfc85dde4073922c4eb6ece1041cb68d64c63ec9661",
+    "zh:c46e19367af531022ef592bd32e9b513379f97340fa15b977647da44b9aa85b5",
+  ]
+}
+
 provider "registry.terraform.io/chainguard-dev/oci" {
   version     = "0.0.17"
   constraints = "0.0.17"

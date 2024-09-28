@@ -55,6 +55,16 @@ resource "apko_build" "dev_image" {
   config = data.apko_config.dev_image.config
 }
 
+resource "cosign_sign" "image_sig" {
+  image = apko_build.image.image_ref
+  conflict = "REPLACE"
+}
+
+resource "cosign_sign" "dev_image_sig" {
+  image = apko_build.dev_image.image_ref
+  conflict = "REPLACE"
+}
+
 resource "oci_tags" "package_tags" {
   repo = var.repository
   tags = local.tags

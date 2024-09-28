@@ -7,5 +7,9 @@ terraform {
     oci = {
       source = "chainguard-dev/oci"
     }
+
+    cosign = {
+      source = "chainguard-dev/cosign"
+    }
   }
 }
