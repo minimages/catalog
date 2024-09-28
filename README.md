@@ -106,3 +106,13 @@ These images contain `busybox` to provide a minimal shell and `apk-tools` to ins
 
 ### Semver tags
 The images get tagged with the components of semver version of the upstream package they are based on.
+
+## Verifying Signatures
+
+The images are signed using [cosign](https://github.com/sigstore/cosign). The signature of an image can be verified using the following command:
+
+```bash
+cosign verify ghcr.io/minimages/curl \
+  --certificate-identity 'https://github.com/minimages/catalog/.github/workflows/build.yml@refs/heads/main' \
+  --certificate-oidc-issuer 'https://token.actions.githubusercontent.com'
+```
