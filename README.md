@@ -47,6 +47,24 @@ Minimal multi-arch container images for various tools based on Wolfi.
 <tr>
 
 <td>
+    <a href="//ghcr.io/minimages/docker-cli"><code>ghcr.io/minimages/docker-cli</code></a>
+</td>
+
+<td>
+    <code>27</code>
+    <code>27-dev</code>
+    <code>27.3</code>
+    <code>27.3-dev</code>
+    <code>27.3.1</code>
+    <code>27.3.1-dev</code>
+    <code>latest</code>
+    <code>latest-dev</code>
+</td>
+</tr>
+
+<tr>
+
+<td>
     <a href="//ghcr.io/minimages/gcloud"><code>ghcr.io/minimages/gcloud</code></a>
 </td>
 
