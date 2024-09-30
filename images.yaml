@@ -24,5 +24,6 @@ images:
 
   docker-cli:
     packages: [docker-cli]
-    entrypoint:
-      command: docker
+    config:
+      entrypoint:
+        command: docker
