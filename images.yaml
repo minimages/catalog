@@ -21,3 +21,8 @@ images:
     config:
       entrypoint:
         command: aws
+
+  docker-cli:
+    packages: [docker-cli]
+    entrypoint:
+      command: docker
