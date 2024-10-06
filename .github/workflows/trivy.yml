@@ -1,0 +1,45 @@
+on:
+  workflow_dispatch:
+  push:
+
+permissions: {}
+
+jobs:
+  matrix:
+    outputs:
+      images: ${{ steps.set-matrix.outputs.images }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - id: set-matrix
+        shell: ruby -ryaml -rjson {0}
+        run: |
+          config = YAML.safe_load(File.read("images.yaml"))
+          File.open(ENV['GITHUB_OUTPUT'], 'a') do |io|
+            io.puts("images=#{config['images'].keys.to_json}")
+          end
+
+  trivy:
+    needs: matrix
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+      packages: read
+    strategy:
+      matrix:
+        image: ${{ fromJSON(needs.matrix.outputs.images) }}
+    steps:
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: ghcr.io/${{ github.repository_owner }}/${{ matrix.image }}:latest
+          format: sarif
+          output: trivy-results.sarif
+
+      - uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: 'trivy-results.sarif'
