@@ -97,6 +97,24 @@ Minimal multi-arch container images for various tools based on Wolfi.
 <tr>
 
 <td>
+    <a href="//ghcr.io/minimages/kubectl"><code>ghcr.io/minimages/kubectl</code></a>
+</td>
+
+<td>
+    <code>1</code>
+    <code>1-dev</code>
+    <code>1.31</code>
+    <code>1.31-dev</code>
+    <code>1.31.1</code>
+    <code>1.31.1-dev</code>
+    <code>latest</code>
+    <code>latest-dev</code>
+</td>
+</tr>
+
+<tr>
+
+<td>
     <a href="//ghcr.io/minimages/traefik"><code>ghcr.io/minimages/traefik</code></a>
 </td>
 
@@ -116,7 +134,7 @@ Minimal multi-arch container images for various tools based on Wolfi.
 
 ## Image Configuration
 
-All images run as non-root user with UID/GID 65532. The directory `/src` is provided as the working directory and is owned by the same user.
+All images run as `nonroot` user with UID/GID 65532. The directory `/src` is provided as the working directory and is owned by the same user.
 
 ## Tags
 ### `-dev` tags
