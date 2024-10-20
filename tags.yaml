@@ -3,8 +3,8 @@
 - "2-dev"
 - "2.18"
 - "2.18-dev"
-- "2.18.5"
-- "2.18.5-dev"
+- "2.18.10"
+- "2.18.10-dev"
 - "latest"
 - "latest-dev"
 "curl":
@@ -26,8 +26,8 @@
 - "latest"
 - "latest-dev"
 "gcloud":
-- "496"
-- "496-dev"
+- "497"
+- "497-dev"
 - "latest"
 - "latest-dev"
 "git":
