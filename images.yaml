@@ -1,3 +1,4 @@
+cosign: true
 repository: ghcr.io/minimages
 images:
   curl:
@@ -9,9 +10,6 @@ images:
   gcloud:
     packages: [google-cloud-sdk]
     tags_count: 1
-    config:
-      entrypoint:
-        command: gcloud
 
   traefik:
     packages: [traefik]
@@ -27,3 +25,6 @@ images:
     config:
       entrypoint:
         command: docker
+
+  kubectl:
+    packages: [kubectl]
