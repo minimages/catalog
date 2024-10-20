@@ -18,17 +18,23 @@ provider "apko" {
   default_archs      = ["amd64", "arm64"]
 }
 
+variable "config_path" {
+  type    = string
+  default = "images.yaml"
+}
+
 locals {
-  spec = yamldecode(file("images.yaml"))
+  spec = yamldecode(file(var.config_path))
 }
 
 module "images" {
   source     = "./build"
   images     = local.spec.images
   repository = local.spec.repository
+  cosign     = local.spec.cosign
 }
 
 resource "local_file" "tags" {
-  content = yamlencode(module.images.tags)
+  content  = yamlencode(module.images.tags)
   filename = "tags.yaml"
 }

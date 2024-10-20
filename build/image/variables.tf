@@ -21,6 +21,11 @@ variable "dev_packages" {
   default = ["apk-tools", "busybox"]
 }
 
+variable "cosign" {
+  type    = bool
+  default = true
+}
+
 variable "config" {
   type = any
 }

@@ -6,6 +6,11 @@ variable "images" {
   type = any
 }
 
+variable "cosign" {
+  type    = bool
+  default = true
+}
+
 locals {
   images = { for k, v in var.images : k => merge({
     config     = {}
@@ -22,8 +27,9 @@ module "image" {
   packages   = each.value.packages
   config     = each.value.config
   tags_count = each.value.tags_count
+  cosign     = var.cosign
 }
 
 output "tags" {
-    value = { for k, v in module.image : k => v.tags }
+  value = { for k, v in module.image : k => v.tags }
 }

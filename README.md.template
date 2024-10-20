@@ -33,7 +33,7 @@ Minimal multi-arch container images for various tools based on Wolfi.
 
 ## Image Configuration
 
-All images run as non-root user with UID/GID 65532. The directory `/src` is provided as the working directory and is owned by the same user.
+All images run as `nonroot` user with UID/GID 65532. The directory `/src` is provided as the working directory and is owned by the same user.
 
 ## Tags
 ### `-dev` tags
