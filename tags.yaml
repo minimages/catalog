@@ -3,8 +3,8 @@
 - "2-dev"
 - "2.18"
 - "2.18-dev"
-- "2.18.10"
-- "2.18.10-dev"
+- "2.18.15"
+- "2.18.15-dev"
 - "latest"
 - "latest-dev"
 "curl":
@@ -26,8 +26,8 @@
 - "latest"
 - "latest-dev"
 "gcloud":
-- "497"
-- "497-dev"
+- "498"
+- "498-dev"
 - "latest"
 - "latest-dev"
 "git":
@@ -44,8 +44,8 @@
 - "1-dev"
 - "1.31"
 - "1.31-dev"
-- "1.31.1"
-- "1.31.1-dev"
+- "1.31.2"
+- "1.31.2-dev"
 - "latest"
 - "latest-dev"
 "traefik":
