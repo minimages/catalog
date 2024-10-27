@@ -19,8 +19,8 @@ Minimal multi-arch container images for various tools based on Wolfi.
     <code>2-dev</code>
     <code>2.18</code>
     <code>2.18-dev</code>
-    <code>2.18.10</code>
-    <code>2.18.10-dev</code>
+    <code>2.18.15</code>
+    <code>2.18.15-dev</code>
     <code>latest</code>
     <code>latest-dev</code>
 </td>
@@ -69,8 +69,8 @@ Minimal multi-arch container images for various tools based on Wolfi.
 </td>
 
 <td>
-    <code>497</code>
-    <code>497-dev</code>
+    <code>498</code>
+    <code>498-dev</code>
     <code>latest</code>
     <code>latest-dev</code>
 </td>
@@ -105,8 +105,8 @@ Minimal multi-arch container images for various tools based on Wolfi.
     <code>1-dev</code>
     <code>1.31</code>
     <code>1.31-dev</code>
-    <code>1.31.1</code>
-    <code>1.31.1-dev</code>
+    <code>1.31.2</code>
+    <code>1.31.2-dev</code>
     <code>latest</code>
     <code>latest-dev</code>
 </td>
