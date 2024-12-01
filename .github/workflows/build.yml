@@ -46,3 +46,4 @@ jobs:
           ignore-no-changes: true
           title: Update tags and README.md
           commit-message: Update tags and README.md
+          auto-merge: true
