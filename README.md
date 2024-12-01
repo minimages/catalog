@@ -87,8 +87,8 @@ Minimal multi-arch container images for various tools based on Wolfi.
     <code>2-dev</code>
     <code>2.47</code>
     <code>2.47-dev</code>
-    <code>2.47.0</code>
-    <code>2.47.0-dev</code>
+    <code>2.47.1</code>
+    <code>2.47.1-dev</code>
     <code>latest</code>
     <code>latest-dev</code>
 </td>
