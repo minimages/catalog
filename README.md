@@ -35,10 +35,10 @@ Minimal multi-arch container images for various tools based on Wolfi.
 <td>
     <code>8</code>
     <code>8-dev</code>
-    <code>8.15</code>
-    <code>8.15-dev</code>
-    <code>8.15.0</code>
-    <code>8.15.0-dev</code>
+    <code>8.16</code>
+    <code>8.16-dev</code>
+    <code>8.16.0</code>
+    <code>8.16.0-dev</code>
     <code>latest</code>
     <code>latest-dev</code>
 </td>
@@ -53,10 +53,10 @@ Minimal multi-arch container images for various tools based on Wolfi.
 <td>
     <code>28</code>
     <code>28-dev</code>
-    <code>28.3</code>
-    <code>28.3-dev</code>
-    <code>28.3.3</code>
-    <code>28.3.3-dev</code>
+    <code>28.4</code>
+    <code>28.4-dev</code>
+    <code>28.4.0</code>
+    <code>28.4.0-dev</code>
     <code>latest</code>
     <code>latest-dev</code>
 </td>
@@ -69,8 +69,8 @@ Minimal multi-arch container images for various tools based on Wolfi.
 </td>
 
 <td>
-    <code>536</code>
-    <code>536-dev</code>
+    <code>541</code>
+    <code>541-dev</code>
     <code>latest</code>
     <code>latest-dev</code>
 </td>
@@ -103,10 +103,10 @@ Minimal multi-arch container images for various tools based on Wolfi.
 <td>
     <code>1</code>
     <code>1-dev</code>
-    <code>1.33</code>
-    <code>1.33-dev</code>
-    <code>1.33.4</code>
-    <code>1.33.4-dev</code>
+    <code>1.34</code>
+    <code>1.34-dev</code>
+    <code>1.34.1</code>
+    <code>1.34.1-dev</code>
     <code>latest</code>
     <code>latest-dev</code>
 </td>
@@ -123,8 +123,8 @@ Minimal multi-arch container images for various tools based on Wolfi.
     <code>3-dev</code>
     <code>3.5</code>
     <code>3.5-dev</code>
-    <code>3.5.1</code>
-    <code>3.5.1-dev</code>
+    <code>3.5.3</code>
+    <code>3.5.3-dev</code>
     <code>latest</code>
     <code>latest-dev</code>
 </td>
