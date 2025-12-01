@@ -35,10 +35,10 @@ Minimal multi-arch container images for various tools based on Wolfi.
 <td>
     <code>8</code>
     <code>8-dev</code>
-    <code>8.16</code>
-    <code>8.16-dev</code>
-    <code>8.16.0</code>
-    <code>8.16.0-dev</code>
+    <code>8.17</code>
+    <code>8.17-dev</code>
+    <code>8.17.0</code>
+    <code>8.17.0-dev</code>
     <code>latest</code>
     <code>latest-dev</code>
 </td>
@@ -51,12 +51,12 @@ Minimal multi-arch container images for various tools based on Wolfi.
 </td>
 
 <td>
-    <code>28</code>
-    <code>28-dev</code>
-    <code>28.5</code>
-    <code>28.5-dev</code>
-    <code>28.5.1</code>
-    <code>28.5.1-dev</code>
+    <code>29</code>
+    <code>29-dev</code>
+    <code>29.1</code>
+    <code>29.1-dev</code>
+    <code>29.1.1</code>
+    <code>29.1.1-dev</code>
     <code>latest</code>
     <code>latest-dev</code>
 </td>
@@ -69,8 +69,8 @@ Minimal multi-arch container images for various tools based on Wolfi.
 </td>
 
 <td>
-    <code>545</code>
-    <code>545-dev</code>
+    <code>548</code>
+    <code>548-dev</code>
     <code>latest</code>
     <code>latest-dev</code>
 </td>
@@ -85,10 +85,10 @@ Minimal multi-arch container images for various tools based on Wolfi.
 <td>
     <code>2</code>
     <code>2-dev</code>
-    <code>2.51</code>
-    <code>2.51-dev</code>
-    <code>2.51.2</code>
-    <code>2.51.2-dev</code>
+    <code>2.52</code>
+    <code>2.52-dev</code>
+    <code>2.52.0</code>
+    <code>2.52.0-dev</code>
     <code>latest</code>
     <code>latest-dev</code>
 </td>
@@ -105,8 +105,8 @@ Minimal multi-arch container images for various tools based on Wolfi.
     <code>1-dev</code>
     <code>1.34</code>
     <code>1.34-dev</code>
-    <code>1.34.1</code>
-    <code>1.34.1-dev</code>
+    <code>1.34.2</code>
+    <code>1.34.2-dev</code>
     <code>latest</code>
     <code>latest-dev</code>
 </td>
@@ -121,10 +121,10 @@ Minimal multi-arch container images for various tools based on Wolfi.
 <td>
     <code>3</code>
     <code>3-dev</code>
-    <code>3.5</code>
-    <code>3.5-dev</code>
-    <code>3.5.4</code>
-    <code>3.5.4-dev</code>
+    <code>3.6</code>
+    <code>3.6-dev</code>
+    <code>3.6.2</code>
+    <code>3.6.2-dev</code>
     <code>latest</code>
     <code>latest-dev</code>
 </td>
