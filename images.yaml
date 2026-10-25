@@ -15,7 +15,7 @@ images:
     packages: [traefik]
 
   aws-cli:
-    packages: [aws-cli-v2]
+    packages: [aws-cli]
     config:
       entrypoint:
         command: aws
